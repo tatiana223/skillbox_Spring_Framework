@@ -1,0 +1,11 @@
+# Базовый образ, содержащий Java 17
+FROM openjdk:17-oracle
+
+# Директория приложения внутри контейнера
+WORKDIR /app
+
+# Копирование JAR-файлов приложений в контейнер
+COPY build/libs/socketserver-0.0.1-SNAPSHOT.jar app.jar
+
+# Команда для запуска приложения
+CMD ["java", "-jar", "app.jar"]
