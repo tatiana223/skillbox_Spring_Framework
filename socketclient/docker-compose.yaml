@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  socket-server:
+    image: socket-server
+    networks:
+      - compose-socket-network
+    ports:
+      - "8888:8888"
+
+  socket-client:
+    image: socket-client
+    networks:
+      - compose-socket-network
+    environment:
+      - APP_SERVER_HOST=socket-server
+      - APP_SERVER_PORT=8888
+    depends_on:
+      - socket-server
+
+networks:
+  compose-socket-network:

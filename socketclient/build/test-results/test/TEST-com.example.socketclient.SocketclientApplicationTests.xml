@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.socketclient.SocketclientApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-10-19T18:11:04.472Z" hostname="LAPTOP-K7S8GART" time="1.204">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.example.socketclient.SocketclientApplicationTests" time="1.204"/>
+  <system-out><![CDATA[21:11:02.578 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.socketclient.SocketclientApplicationTests]: SocketclientApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+21:11:02.798 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.socketclient.SocketclientApplication for test class com.example.socketclient.SocketclientApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.6)
+
+2025-10-19T21:11:03.625+03:00  INFO 27380 --- [    Test worker] c.e.s.SocketclientApplicationTests       : Starting SocketclientApplicationTests using Java 17.0.0.1 with PID 27380 (started by Tanya in D:\JAVA\socketclient)
+2025-10-19T21:11:03.625+03:00  INFO 27380 --- [    Test worker] c.e.s.SocketclientApplicationTests       : No active profile set, falling back to 1 default profile: "default"
+2025-10-19T21:11:04.457+03:00  INFO 27380 --- [    Test worker] c.e.s.SocketclientApplicationTests       : Started SocketclientApplicationTests in 1.351 seconds (process running for 3.323)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
