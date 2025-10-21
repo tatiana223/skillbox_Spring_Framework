@@ -1,0 +1,15 @@
+app:
+    init-sample-data: true
+
+spring:
+    shell:
+        history:
+            enable: true
+        command:
+            version:
+                enabled: false
+
+logging:
+    level:
+        com.example.skillboxsecondtask: INFO
+
