@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://127.0.0.1:5433/contactdb
+    username: postgres
+    password: 1234
+    hikari:
+      schema: contacts_schema
+      connection-init-sql: CREATE SCHEMA IF NOT EXISTS contacts_schema
+      connection-timeout: 10000
+
+logging:
+  level:
+    org.springframework.jdbc.core: TRACE

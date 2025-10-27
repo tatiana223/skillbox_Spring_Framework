@@ -1,0 +1,21 @@
+version: '3.9'
+
+services:
+  postgres:
+    image: postgres:13
+    container_name: contactlist-postgres
+    restart: always
+    environment:
+      POSTGRES_DB: contactdb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 1234
+    ports:
+      - "5433:5432"
+    volumes:
+      # Создаёт отдельный том для хранения данных базы
+      - postgres_data:/var/lib/postgresql/data
+      # Если у тебя есть SQL-скрипт инициализации — он выполнится при первом старте
+      - ./schema.sql:/docker-entrypoint-initdb.d/schema.sql
+
+volumes:
+  postgres_data:
